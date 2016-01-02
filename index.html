@@ -67,8 +67,9 @@
 				if(input.length !== 0){
 					if(result.website === 'http://www.iotafinance.com/en/ISO-10383-Market-Identification-Codes-MIC.html'){
 						$('#fullname').text(result.name);
-						$('#website').append('Unknown Exchange: ' + '<a href="' + result.website + '" target="_blank">Full Market Code Listing</a>');
-						$('#email').append('Request Exchange Addition: ' + '<a href="https://github.com/Alek-S/Derivative-Exchange-Lookup/issues" target="_blank">Open Issue</a>');
+						$('#website').append('"' + input + '"' + ' is not a known exchange, or has not been added yet<br>');
+						$('#email').append('External Code Listing: <a href="' + result.website + '" target="_blank">Link</a>');
+						$('#holiday').append('Request Exchange Addition: ' + '<a href="https://github.com/Alek-S/Derivative-Exchange-Lookup/issues" target="_blank">Open Issue</a>');
 						$('.card').fadeIn( 400 );
 					}else if(result.website !== 'http://www.iotafinance.com/en/ISO-10383-Market-Identification-Codes-MIC.html'){
 						$('#fullname').text(result.name);
