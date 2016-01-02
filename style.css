@@ -126,6 +126,9 @@ input:-ms-input-placeholder {
 	font-size: 1.55em;
 	font-weight: 200;
 }
+.card{
+	display: none;
+}
 #fullname{
 	font-family: 'Work Sans', sans-serif;
 	width: 550px;
@@ -152,15 +155,18 @@ input:-ms-input-placeholder {
 .result{
 	margin: auto;
 	background-color: #FFFFFF;
-	padding-top: 20px;
+	padding-top: 40px;
 	width: 550px;
-	height: 150px;
+	height: 140px;
 	border-radius: 0px 0px 7px 7px;
 	border: 1px solid #cccccc;
 	font-family: 'Work Sans', sans-serif;
 }
 .result p{
 	padding-left: 50px;
+}
+#website{
+	display: inline;
 }
 
 

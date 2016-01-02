@@ -29,28 +29,46 @@
 
 	<div id="submitForm">
 		<form>
-			<input type="text" placeholder="Exchange code" id="autocomplete"><button>Submit</button>
+			<input type="text" placeholder="Exchange code" id="autocomplete" class="exchInput"><button>Submit</button>
 		</form>
 	</div>
 
 	<div class="card">
 		<p id="fullname">OneChicago (Cleared by OCC)</p>
 		<div class="result" id="success">
-			<p>Website:</p>
-			<p>Email:</p>
-			<p>Holiday Calendar:</p>
+			<p id="website">Website:</p> 
+			<p id="email">Email:</p>
+			<p id="holiday">Holiday Calendar:</p>
 		</div>
 	</div>
-	
+
 	<script type="text/javascript">
 
 		$( "#autocomplete" ).autocomplete({
 		  source: [ "CME", "CMECE", "CBOT", "CBT", "NYMEX", "COMEX", "CFE", "XCBF", "ICE", "IFUS", "IFEU", "OCC", "ONE", "NFX", "ELX", "XELX", "EUREX", "LME", "SGX", "IM", "KCBT", "MGEX", "MGE", "CCE", "MX", "BDM", "TMX", "CDCC", "Nadex", "LIFFE", "MEFF", "OMX", "DME", "KRX", "NSE", "BSE", "IEX", "HKEx", "SHFE", "ZCE", "SAFEX", "MexDer", "BVMF", "OMIP"]
 		});
 
-		document.ready(function(){
+		$(document).ready(function(){
 			$('button').on('click', function(event){
 				event.preventDefault();
+				$('.card').hide();
+				var input = $('.exchInput').val();
+				var result = exchange(input.toUpperCase());
+
+				//clear anything previous
+				$('#fullname').text(null);
+				$('#website').text(null);
+				$('#email').text(null);
+				$('#holiday').text(null);
+
+				//populate
+				$('#fullname').text(result.name);
+				$('#website').append('Website: ' + '<a href="' + result.website + '" target="_blank">Link</a>');
+				$('#email').append('Support Email: ' + result.email);
+				$('#holiday').append('Holiday Calendar:' + '<a href="' + result.holiday + '" target="_blank">Link</a>');
+
+				//show
+				$('.card').fadeIn( 400 );
 			});
 		});
 	</script>
