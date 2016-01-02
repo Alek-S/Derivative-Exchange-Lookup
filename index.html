@@ -8,6 +8,9 @@
 
 	<link href='https://fonts.googleapis.com/css?family=Work+Sans:200,400' rel='stylesheet' type='text/css'>
 	<link href="./style.css" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 </head>
 <body>
 	<div class="topBar">
@@ -24,9 +27,17 @@
 
 	<div id="submitForm">
 	<form>
-		<input type="text" placeholder="Exchange code"><button>Submit</button>
+		<input type="text" placeholder="Exchange code" id="autocomplete"><button>Submit</button>
 	</form>
 	</div>
 
+	<script type="text/javascript">
+
+
+		$( "#autocomplete" ).autocomplete({
+		  source: [ "CME", "CMECE", "CBOT", "CBT", "NYMEX", "COMEX", "CFE", "XCBF", "ICE", "IFUS", "IFEU", "OCC", "ONE", "NFX", "ELX", "XELX", "EUREX", "LME", "SGX", "IM", "KCBT", "MGEX", "MGE", "CCE", "MX", "BDM", "TMX", "CDCC", "Nadex", "LIFFE", "MEFF", "OMX", "DME", "KRX", "NSE", "BSE", "IEX", "HKEx", "SHFE", "ZCE", "SAFEX", "MexDer", "BVMF", "OMIP"]
+		});
+
+	</script>
 </body>
 </html>
