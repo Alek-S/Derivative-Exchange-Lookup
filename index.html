@@ -8,9 +8,11 @@
 
 	<link href='https://fonts.googleapis.com/css?family=Work+Sans:200,400' rel='stylesheet' type='text/css'>
 	<link href="./style.css" rel="stylesheet" type="text/css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<link rel="stylesheet" href="./jquery-ui.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script src="./JS/ExchangeLookup.js"></script>
+
 </head>
 <body>
 	<div class="topBar">
@@ -26,18 +28,31 @@
 	</div>
 
 	<div id="submitForm">
-	<form>
-		<input type="text" placeholder="Exchange code" id="autocomplete"><button>Submit</button>
-	</form>
+		<form>
+			<input type="text" placeholder="Exchange code" id="autocomplete"><button>Submit</button>
+		</form>
 	</div>
 
+	<div class="card">
+		<p id="fullname">OneChicago (Cleared by OCC)</p>
+		<div class="result" id="success">
+			<p>Website:</p>
+			<p>Email:</p>
+			<p>Holiday Calendar:</p>
+		</div>
+	</div>
+	
 	<script type="text/javascript">
-
 
 		$( "#autocomplete" ).autocomplete({
 		  source: [ "CME", "CMECE", "CBOT", "CBT", "NYMEX", "COMEX", "CFE", "XCBF", "ICE", "IFUS", "IFEU", "OCC", "ONE", "NFX", "ELX", "XELX", "EUREX", "LME", "SGX", "IM", "KCBT", "MGEX", "MGE", "CCE", "MX", "BDM", "TMX", "CDCC", "Nadex", "LIFFE", "MEFF", "OMX", "DME", "KRX", "NSE", "BSE", "IEX", "HKEx", "SHFE", "ZCE", "SAFEX", "MexDer", "BVMF", "OMIP"]
 		});
 
+		document.ready(function(){
+			$('button').on('click', function(event){
+				event.preventDefault();
+			});
+		});
 	</script>
 </body>
 </html>
