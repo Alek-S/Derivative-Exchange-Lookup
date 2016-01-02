@@ -129,6 +129,22 @@ input:-ms-input-placeholder {
 .card{
 	display: none;
 }
+.card a:link{
+	text-decoration: none;
+	color: #4da6ff;
+}
+#website a:hover{
+	color: #ff6666;
+}
+#email a:hover{
+	color: #ff6666;
+}
+#holiday a:hover{
+	color: #ff6666;
+}
+.card a:visited{
+	color: #4da6ff;
+}
 #fullname{
 	font-family: 'Work Sans', sans-serif;
 	width: 550px;
@@ -161,12 +177,16 @@ input:-ms-input-placeholder {
 	border-radius: 0px 0px 7px 7px;
 	border: 1px solid #cccccc;
 	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
 }
 .result p{
 	padding-left: 50px;
 }
 #website{
 	display: inline;
+}
+#email {
+
 }
 
 

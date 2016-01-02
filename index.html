@@ -64,8 +64,8 @@
 				//populate
 				$('#fullname').text(result.name);
 				$('#website').append('Website: ' + '<a href="' + result.website + '" target="_blank">Link</a>');
-				$('#email').append('Support Email: ' + result.email);
-				$('#holiday').append('Holiday Calendar:' + '<a href="' + result.holiday + '" target="_blank">Link</a>');
+				$('#email').append('Email: ' + '<a href="mailto:' + result.email + '">' + result.email +'</a>');
+				$('#holiday').append('Holiday Calendar: ' + '<a href="' + result.holiday + '" target="_blank">Link</a>');
 
 				//show
 				$('.card').fadeIn( 400 );
