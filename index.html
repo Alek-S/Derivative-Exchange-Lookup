@@ -62,10 +62,17 @@
 				$('#holiday').text(null);
 
 				//populate
-				$('#fullname').text(result.name);
-				$('#website').append('Website: ' + '<a href="' + result.website + '" target="_blank">Link</a>');
-				$('#email').append('Email: ' + '<a href="mailto:' + result.email + '">' + result.email +'</a>');
-				$('#holiday').append('Holiday Calendar: ' + '<a href="' + result.holiday + '" target="_blank">Link</a>');
+
+				if(result.website === 'http://www.iotafinance.com/en/ISO-10383-Market-Identification-Codes-MIC.html'){
+					$('#fullname').text(result.name);
+					$('#website').append('Unknown Exchange: ' + '<a href="' + result.website + '" target="_blank">Full Market Code Listing</a>');
+					$('#email').append('Request Exchange Addition: ' + '<a href="https://github.com/Alek-S/Derivative-Exchange-Lookup/issues" target="_blank">Open Issue</a>');
+				}else if(result.website !== 'http://www.iotafinance.com/en/ISO-10383-Market-Identification-Codes-MIC.html'){
+					$('#fullname').text(result.name);
+					$('#website').append('Website: ' + '<a href="' + result.website + '" target="_blank">Link</a>');
+					$('#email').append('Email: ' + '<a href="mailto:' + result.email + '">' + result.email +'</a>');
+					$('#holiday').append('Holiday Calendar: ' + '<a href="' + result.holiday + '" target="_blank">Link</a>');
+				}
 
 				//show
 				$('.card').fadeIn( 400 );
