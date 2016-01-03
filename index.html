@@ -24,7 +24,7 @@
 	</div>
 
 	<div class="description">
-	<p>Get concise information about a derivative exchange by searching its market code.</p>
+	<p>Concise reference information about a derivative exchange from its market code.</p>
 	</div>
 
 	<div id="submitForm">
@@ -36,9 +36,9 @@
 	<div class="card">
 		<p id="fullname">OneChicago (Cleared by OCC)</p>
 		<div class="result" id="success">
-			<p id="website">Website:</p> 
-			<p id="email">Email:</p>
-			<p id="holiday">Holiday Calendar:</p>
+			<p id="website"></p> 
+			<p id="email"></p>
+			<p id="holiday"></p>
 		</div>
 	</div>
 
@@ -52,9 +52,7 @@
 			$('button').on('click', function(event){
 				event.preventDefault();
 				$('.card').hide();
-				var input = $('.exchInput').val();
-				console.log(input);
-				console.log(input.length);
+				var input = $('.exchInput').val().trim();
 				var result = exchange(input.toUpperCase());
 
 				//clear anything previous
@@ -67,9 +65,9 @@
 				if(input.length !== 0){
 					if(result.website === 'http://www.iotafinance.com/en/ISO-10383-Market-Identification-Codes-MIC.html'){
 						$('#fullname').text(result.name);
-						$('#website').append('"' + input + '"' + ' is not a known exchange, or has not been added yet<br>');
+						$('#website').append('"' + input + '"' + ' isn\'t a known exchange, or hasn\'t been added yet<br>');
 						$('#email').append('External Code Listing: <a href="' + result.website + '" target="_blank">Link</a>');
-						$('#holiday').append('Request Exchange Addition: ' + '<a href="https://github.com/Alek-S/Derivative-Exchange-Lookup/issues" target="_blank">Open Issue</a>');
+						$('#holiday').append('Request Addition: ' + '<a href="https://github.com/Alek-S/Derivative-Exchange-Lookup/issues" target="_blank">Open Issue</a>');
 						$('.card').fadeIn( 400 );
 					}else if(result.website !== 'http://www.iotafinance.com/en/ISO-10383-Market-Identification-Codes-MIC.html'){
 						$('#fullname').text(result.name);
