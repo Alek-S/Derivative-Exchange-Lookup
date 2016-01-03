@@ -42,7 +42,7 @@ function exchange (market){
 		CDCC: {name:'Canadian Derivatives Clearing Corporation (Montreal Exchange)', website:'http://www.cdcc.ca/index_en', email:'cdcc-ops@cdcc.ca', holiday:'http://www.cdcc.ca/services_holidays_en'},
 		NADEX: {name:'Northern American Derivatives Exchange (HedgeStreet)', website:'http://www.nadex.com/', email:'customerservice@nadex.com', holiday:'http://www.nadex.com/holidays.html'},
 		LIFFE: {name:'ICE Futures Europe (London International Financial Futures and Options Exchange)', website:'https://www.theice.com/futures-europe', email:'icehelpdesk@theice.com', holiday:'https://www.theice.com/holiday-hours'},
-		ICAP: {name:'Intercapital', website:'http://www.icap.com/', email:'info@icap.com', holiday;'http://www.icap.com/site-services/search-results.aspx?Domain=all&ResultPage=1&query=holiday%20calendar&searchphrase=exact'},
+		ICAP: {name:'Intercapital', website:'http://www.icap.com/', email:'info@icap.com', holiday:'http://www.icap.com/site-services/search-results.aspx?Domain=all&ResultPage=1&query=holiday%20calendar&searchphrase=exact'},
 		MEFF: {name:'Mercado Español de Futuros Financieros', website:'http://www.meff.es/?id=ing', email:'xxx@meff.com', holiday:''},
 		OMX: {name:'NASDAQ OMX', website:'http://business.nasdaq.com/', email:'', holiday:'http://www.nasdaqomx.com/searchresult?q=holiday+OMX'},
 		DME: {name:'Dubai Mercantile Exchange', website:'http://www.dubaimerc.com/', email:'customercare@dubaimerc.com', holiday:'http://www.dubaimerc.com/en/Home/Content/trading-hour-and-holiday-calendar'},
