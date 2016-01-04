@@ -15,7 +15,7 @@ Tool to provide information on a financial exchange from the market code. Exampl
 
 
 ###To-Do List
-* ~~Create browser front-end~~
+* ~~Create browser front-end~~ [Added under gh-pages branch](https://github.com/Alek-S/Derivative-Exchange-Lookup/tree/gh-pages)
 * Build out list to all derivative markets exchanges (currently just primary exchanges)
 * Parameter for Options, Futures, Options and Futures
 * Market geographic location
