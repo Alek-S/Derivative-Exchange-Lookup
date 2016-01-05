@@ -52,7 +52,7 @@ function exchange (market){
 		IEX: {name: 'Indian Energy Exchange', website:'http://www.iexindia.com/', email:'info@iexindia.com', holiday:'http://www.iexindia.com/marketdata.aspx?id=16&mid=1'},
 		HKEX: {name: 'Hong Kong Exchange', website:'https://www.hkex.com.hk/eng/index.htm', email:'info@hkex.com.hk', holiday:'http://www.hkex.com.hk/eng/prod/drprod/hkifo/tradcalend_1.htm'},
 		SHFE: {name: 'Shanghai Futures Exchange', website:'http://www.shfe.com.cn/en/', email:'', holiday:'http://www.shfe.com.cn/searchEnAction.do?queryString=holiday&opt=0'},
-		ZCE: {name: 'Zhengzhou Commodity Exchange', website:'english.czce.com.cn', email:'', holiday:''},
+		ZCE: {name: 'Zhengzhou Commodity Exchange', website:'http://english.czce.com.cn/', email:'', holiday:''},
 		SAFEX: {name: 'South African Futures Exchange', website:'www.safex.co.za', email:'', holiday:''},
 		MEXDER: {name: 'Mexican Derivatives Exchange (CME Partner)', website:'http://www.mexder.com.mx/wb3/wb/MEX/home/_rid/5?lng_act=lng_step2&language=en', email:'notimexder@grupobmv.com.mx', holiday:'http://www.mexder.com.mx/wb3/wb/MEX/dias_inhabiles/_rid/5?lng_act=lng_step2&language=en'},
 		BVMF: {name: 'Bolsa de Valores, Mercadorias & Futuros de São Paulo (CME Partner)', website:'http://www.bmfbovespa.com.br/en-us/home.aspx?idioma=en-us', email:'', holiday:'http://www.bmfbovespa.com.br/en-us/rules/market-calendar/market-calendar.aspx?idioma=en-us'},
