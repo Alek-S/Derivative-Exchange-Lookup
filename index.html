@@ -63,7 +63,6 @@
 
 				//populate
 				if(input.length !== 0){
-					console.log("holiday: " +result.holiday);
 					if(result.website === 'http://www.iotafinance.com/en/ISO-10383-Market-Identification-Codes-MIC.html'){
 						$('#fullname').text(result.name);
 						$('#website').append('"' + input + '"' + ' isn\'t a known exchange, or hasn\'t been added yet<br>');
@@ -72,7 +71,7 @@
 						$('.card').fadeIn( 400 );
 					}else if(result.website !== 'http://www.iotafinance.com/en/ISO-10383-Market-Identification-Codes-MIC.html'){
 						$('#fullname').text(result.name);
-						
+					 
 						if( result.website.length != 0){
 							$('#website').append('Website: ' + '<a href="' + result.website + '" target="_blank">Link</a>');
 						} else {
