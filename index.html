@@ -36,9 +36,9 @@
 	<div class="card">
 		<p id="fullname">OneChicago (Cleared by OCC)</p>
 		<div class="result" id="success">
-			<p id="website"></p> 
-			<p id="email"></p>
-			<p id="holiday"></p>
+			<p id="website">website</p> 
+			<p id="email">email</p>
+			<p id="holiday">holiday</p>
 		</div>
 	</div>
 
@@ -63,6 +63,7 @@
 
 				//populate
 				if(input.length !== 0){
+					console.log("holiday: " +result.holiday);
 					if(result.website === 'http://www.iotafinance.com/en/ISO-10383-Market-Identification-Codes-MIC.html'){
 						$('#fullname').text(result.name);
 						$('#website').append('"' + input + '"' + ' isn\'t a known exchange, or hasn\'t been added yet<br>');
@@ -71,9 +72,24 @@
 						$('.card').fadeIn( 400 );
 					}else if(result.website !== 'http://www.iotafinance.com/en/ISO-10383-Market-Identification-Codes-MIC.html'){
 						$('#fullname').text(result.name);
-						$('#website').append('Website: ' + '<a href="' + result.website + '" target="_blank">Link</a>');
-						$('#email').append('Email: ' + '<a href="mailto:' + result.email + '">' + result.email +'</a>');
-						$('#holiday').append('Holiday Calendar: ' + '<a href="' + result.holiday + '" target="_blank">Link</a>');
+						
+						if( result.website.length != 0){
+							$('#website').append('Website: ' + '<a href="' + result.website + '" target="_blank">Link</a>');
+						} else {
+							$('#website').text('Website not available');
+						}
+
+						if( result.email.length != 0){
+							$('#email').append('Email: ' + '<a href="mailto:' + result.email + '">' + result.email +'</a>');
+						} else {
+							$('#email').text('Email not available');
+						}
+
+						if( result.holiday.length != 0){
+							$('#holiday').append('Holiday Calendar: ' + '<a href="' + result.holiday + '" target="_blank">Link</a>');
+						} else {
+							$('#holiday').text('Holiday not available');
+						}
 						$('.card').fadeIn( 400 );
 					}
 				}
