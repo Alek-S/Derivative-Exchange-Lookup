@@ -2,11 +2,11 @@
 
 Tool to provide information on a financial exchange from the market code. Example of a source of this code would be an Exch tag in a fixml message *(ex: Exch="IFUS")*.
 
-###Online Interface
+### Online Interface
 [Github Pages Link](http://alek-s.github.io/Derivative-Exchange-Lookup/)
 
 
-###Information Currently Returned
+### Information Currently Returned
 * The exchange full name *(ex: Chicago Merchantile Exchange)*
 * Primary website
 * Support email
@@ -14,7 +14,7 @@ Tool to provide information on a financial exchange from the market code. Exampl
 
 
 
-###To-Do List
+### To-Do List
 * ~~Create browser front-end~~
 * Build out list to all derivative markets exchanges (currently just primary exchanges)
 * Parameter for Options, Futures, Options and Futures
