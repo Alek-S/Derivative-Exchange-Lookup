@@ -2,6 +2,8 @@
 
 Tool to provide information on a financial exchange from the market code. Example of a source of this code would be an Exch tag in a fixml message *(ex: Exch="IFUS")*.
 
+![Demo](./screenshot/demo.gif)
+
 ### Online Interface
 [Github Pages Link](http://alek-s.github.io/Derivative-Exchange-Lookup/)
 
