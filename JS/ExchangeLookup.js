@@ -60,6 +60,7 @@ function exchange (market){
 		OMIP: {name: 'Iberian Energy Clearing House', website:'http://www.omiclear.pt/OMIClear/tabid/130/language/en-GB/Default.aspx', email:'clearing@omiclear.pt', holiday:''},
 		EEX: {name: 'European Energy Exchange AG', website: 'http://www.eex.com/en/', email:'clearing@ecc.de', holiday: 'http://www.eex.com/en/trading/calendar'},
 		ECC: {name: 'European Commodity Clearing AG (EEX subsidiary)', website: 'http://www.ecc.de/ecc-en/', email:'clearing@ecc.de', holiday:'http://www.ecc.de/action/ecc-en/70420/search?Search-show_results%5Bmode%5D=select&Search-show_results%5Barea%5D=&query=holiday' },
+		NEX: {name:'Nodal Exchange', website:'https://www.nodalexchange.com', email:'support@nodalexchange.com', holiday:'https://www.nodalexchange.com/resources/hours-of-operation-holiday-schedule/'},
 		error: {name: market + ' (unknown exchange)', website: 'http://www.iotafinance.com/en/ISO-10383-Market-Identification-Codes-MIC.html', email:'', holiday:''} //error handling
 	};
 
